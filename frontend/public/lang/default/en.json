@@ -5,52 +5,52 @@
     "actions": {
         "logout": {
             "button": "Logout",
-            "failure": "Error encountered attempting to logout warrior"
+            "failure": "Error encountered attempting to logout player"
         },
         "battle": {
-            "delete": "Delete Battle",
-            "abandon": "Abandon Battle",
-            "create": "Create Battle",
-            "join": "Join Battle",
+            "delete": "Delete Game",
+            "abandon": "Abandon Game",
+            "create": "Create Game",
+            "join": "Join Game",
             "save": "Save",
-            "edit": "Edit Battle",
+            "edit": "Edit Game",
             "editPointsDisabled": "Voting is active, cannot modify allowed points."
         },
         "warrior": {
-            "create": "Create Warrior",
+            "create": "Create Player",
             "nudge": "Nudge",
             "promote": "Promote",
             "demote": "Demote"
         },
         "plan": {
-            "add": "Add Plan",
+            "add": "Add Story",
             "view": "View",
             "edit": "Edit",
             "delete": "Delete",
             "activate": "Activate",
-            "skip": "Skip Plan",
+            "skip": "Skip Story",
             "pointed": "Pointed ({count})",
             "unpointed": "Unpointed ({count})",
             "finishVoting": "Finish Voting",
             "restartVoting": "Restart Voting",
             "save": "Save",
             "importJiraXML": {
-                "button": "Import plans from Jira XML",
+                "button": "Import stories from Jira XML",
                 "badFileType": "Error bad file type",
                 "errorReadingFile": "Error reading file"
             },
             "fields": {
                 "name": {
-                    "label": "Plan Name",
-                    "placeholder": "Enter a plan name"
+                    "label": "Story Name",
+                    "placeholder": "Enter a story name"
                 },
                 "type": {
-                    "label": "Plan Type",
+                    "label": "Story Type",
                     "placeholder": "Types"
                 },
                 "link": {
                     "label": "Link",
-                    "placeholder": "Enter a link to plan",
+                    "placeholder": "Enter a link to story",
                     "invalid": "Link isn't a valid absolute URL, e.g. includes protocol (HTTP/HTTPS)"
                 },
                 "referenceId": {
@@ -78,62 +78,62 @@
     },
     "pages": {
         "landing": {
-            "title": "Thunderdome is an Open Source Agile Planning Poker app with a fun theme",
+            "title": "Thunderdome is an Open Source Agile Planning Poker app",
             "bullet1": "Built on cool tech like Svelte, Go, and WebSockets",
-            "bullet2": "Simple {crossoutOpen}User{crossoutClose}Warrior Experience",
+            "bullet2": "Simple Player Experience",
             "bullet3": "Works on all {mbOpen}modern browsers*{mbClose}, including mobile",
             "bullet3NotSorry": "*sorry, not sorry IE",
             "features": {
                 "title": "Features",
-                "bullet1": "No limit on number of Warriors in a Battle",
-                "bullet2": "Secure voting, keeps your Warriors from cheating",
+                "bullet1": "No limit on number of Players in a Game",
+                "bullet2": "Secure voting, keeps your Players from cheating",
                 "bullet3": "Voting Results that are clear and helpful",
-                "bullet4": "Ability to promote any Warrior to Battle Leader",
+                "bullet4": "Ability to promote any Player to Game Leader",
                 "bullet5": "Customizable pointing scales",
                 "bullet6": "Open Source, feel free to {contribOpen}contribute and suggest features{contribClose}",
                 "bullet7": "No fees and Ad free"
             }
         },
         "myBattles": {
-            "nav": "My Battles",
-            "title": "My Battles",
-            "battlesError": "Error finding your battles",
-            "countPlansPointed": "{totalPointed} of {totalPlans} plans pointed",
+            "nav": "My Games",
+            "title": "My Games",
+            "battlesError": "Error finding your games",
+            "countPlansPointed": "{totalPointed} of {totalPlans} stories pointed",
             "createBattle": {
-                "title": "Create a Battle",
-                "createError": "Error encountered creating battle",
+                "title": "Create a Game",
+                "createError": "Error encountered creating game",
                 "fields": {
                     "name": {
-                        "label": "Battle Name",
-                        "placeholder": "Enter a battle name"
+                        "label": "Game Name",
+                        "placeholder": "Enter a game name"
                     },
                     "allowedPointValues": {
                         "label": "Allowed Point Values"
                     },
                     "plans": {
-                        "label": "Plans",
-                        "addButton": "Add Plan",
+                        "label": "Stories",
+                        "addButton": "Add Story",
                         "removeButton": "Remove",
                         "fields": {
                             "name": {
-                                "placeholder": "Enter a plan name"
+                                "placeholder": "Enter a story name"
                             }
                         }
                     },
                     "autoFinishVoting": {
-                        "label": "Auto Finish Voting when all Warriors have voted"
+                        "label": "Auto Finish Voting when all Players have voted"
                     }
                 }
             }
         },
         "createAccount": {
             "nav": "Create Account",
-            "title": "Enlist to Battle",
+            "title": "Register to join pointing games",
             "registrationDisabled": "Registration is disabled.",
             "guestForm": {
                 "title": "Register as Guest",
                 "saveButton": "Register",
-                "createError": "Error encountered registering warrior as guest",
+                "createError": "Error encountered registering player as guest",
                 "fields": {
                     "name": {
                         "label": "Name",
@@ -144,7 +144,7 @@
             "createAccountForm": {
                 "saveButton": "Create",
                 "title": "Create an Account {optionalOpen}(optional){optionalClose}",
-                "createError": "Error encountered creating warrior",
+                "createError": "Error encountered creating player",
                 "fields": {
                     "name": {
                         "label": "Name",
@@ -198,7 +198,7 @@
                     "label": "Avatar"
                 },
                 "enable_notifications": {
-                    "label": "Enable battle notifications"
+                    "label": "Enable game notifications"
                 }
             },
             "updatePasswordForm": {
@@ -250,13 +250,13 @@
             "nav": "Admin",
             "title": "Admin",
             "counts": {
-                "registered": "Registered Warriors",
-                "unregistered": "Unregistered Warriors",
-                "battles": "Battles",
-                "plans": "Plans"
+                "registered": "Registered Players",
+                "unregistered": "Unregistered Players",
+                "battles": "Games",
+                "plans": "Stories"
             },
             "registeredWarriors": {
-                "title": "Registered Warriors",
+                "title": "Registered Players",
                 "name": "Name",
                 "email": "Email",
                 "verified": "Verified",
@@ -267,7 +267,7 @@
             "nav": "Login",
             "title": "Login",
             "button": "Login",
-            "authError": "Error encountered attempting to authenticate warrior",
+            "authError": "Error encountered attempting to authenticate player",
             "sendResetSuccess": "Password reset instructions sent to {email}",
             "sendResetError": "Error encountered attempting to send password reset",
             "fields": {
@@ -298,18 +298,18 @@
             }
         },
         "battle": {
-            "title": "Battle",
-            "warriors": "Warriors",
-            "socketReconnecting": "Ooops, reloading Battle Plans...",
-            "socketError": "Error joining battle, refresh and try again.",
-            "loading": "Loading Battle Plans...",
+            "title": "Game",
+            "warriors": "Players",
+            "socketReconnecting": "Ooops, reloading Game...",
+            "socketError": "Error joining game, refresh and try again.",
+            "loading": "Loading Game...",
             "votingNotStarted": "Voting not started",
-            "warriorJoined": "{name} has joined the battle",
-            "warriorRetreated": "{name} has retreated from the battle",
+            "warriorJoined": "{name} has joined the game",
+            "warriorRetreated": "{name} has left the game",
             "warriorVoted": "{name} has voted",
             "warriorRetractedVote": "{name} has retracted vote",
             "warriorNudge": "pst... {name}, waiting on you to vote.",
-            "warriorInvite": "Invite a Warrior",
+            "warriorInvite": "Invite a Player",
             "warriorLeader": "Leader",
             "finalPoints": "Final Points",
             "points": "Points",
@@ -319,13 +319,13 @@
                 "average": "Average",
                 "highest": "Highest",
                 "showVoters": "Show Voters",
-                "unknownWarrior": "Unknown Warrior"
+                "unknownWarrior": "Unknown Player"
             }
         }
     },
     "footer": {
         "authoredBy": "by {authorOpen}Steven Weathers{authorClose}.",
         "license": "The source code is licensed {licenseOpen}Apache 2.0{licenseClose}.",
-        "poweredBy": "Powered by {svelteOpen}Svelte{svelteClose} and {goOpen}Go{goClose}"
+        "poweredBy": "Operated by andreas.weber@microfocus.com"
     }
 }

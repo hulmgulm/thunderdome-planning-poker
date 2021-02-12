@@ -39,9 +39,9 @@ func InitConfig() {
 	viper.SetDefault("smtp.sender", "no-reply@thunderdome.dev")
 
 	viper.SetDefault("config.allowedPointValues",
-		[]string{"0", "1/2", "1", "2", "3", "5", "8", "13", "20", "40", "100", "?"})
+		[]string{"0", "1/2", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "13", "21", "40", "100", "?"})
 	viper.SetDefault("config.defaultPointValues",
-		[]string{"1", "2", "3", "5", "8", "13", "?"})
+		[]string{"1", "2", "3", "5", "8", "13", "21", "?"})
 	viper.SetDefault("config.show_warrior_rank", false)
 	viper.SetDefault("config.avatar_service", "goadorable")
 	viper.SetDefault("config.toast_timeout", 1000)
